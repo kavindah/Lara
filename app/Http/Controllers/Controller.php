@@ -11,22 +11,6 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    protected $page_name;
-
-    protected $url;
-
-    protected $views;
-
-    public function pageName()
-    {
-        return $this->page_name;
-    }
-
-    public function pageUrl()
-    {
-        return $this->url;
-    }
-
     public function index()
     {
         return view($this->views);
