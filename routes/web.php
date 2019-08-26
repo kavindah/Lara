@@ -8,6 +8,4 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/dashboard', 'HomeController@index')->name('dashboard');
-
-Route::get('/page', 'PageController@index')->name('page');
+Route::get('/{view}', 'Controller@pages');
